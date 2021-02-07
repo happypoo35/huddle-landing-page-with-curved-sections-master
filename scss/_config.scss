@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+
+$Pink: hsl(322, 100%, 66%);
+$Light-Pink: hsl(321, 100%, 78%);
+$Light-Red: hsl(0, 100%, 63%);
+$Very-Dark-Cyan: hsl(192, 100%, 9%);
+$Dim-Dark: rgba($Very-Dark-Cyan, 0.5);
+$Very-Pale-Blue: hsl(207, 100%, 98%);
+$Dim-Light: rgba($Very-Pale-Blue, 0.8);
+
+%tr {
+  transition: 0.3s ease;
+}
+
+$tablet: 800px;
+
+@mixin tablet {
+  @media screen and(max-width:$tablet) {
+    @content;
+  }
+}
